@@ -1,5 +1,7 @@
-##[pylyzer] failed /home/ffdnxob/projects/Python-projects/pyProgram1/basicCalculator.py 1730909684 1895
+##[pylyzer] failed /home/ffdnxob/projects/Python-projects/pyProgram1/basicCalculator.py 1731001842 2991
 .math: Never
+
+
 
 
 
@@ -12,8 +14,9 @@
 
 .oper1: {""}
 .init: () -> {""}
-.basic: |Type_2864 <: Structural({.__contains__ = (self: Never, ?R) -> Bool}), R: Type|(oper1: Type_2864) -> NoneType
-.regCalc: |Type_2866 <: Structural({.__contains__ = (self: Never, ?R) -> Bool}), R: Type|(oper1: Type_2866) -> NoneType
-.runner: |Type_2866 :> {""}, Type_2866 <: Structural({.__contains__ = (self: Never, ?R) -> Bool}), R :> {"/"}|(oper1: Type_2866) -> Never
+.advanced: |Type_1301 <: Structural({.__contains__ = (self: Never, ?R) -> Bool}), R: Type|(oper1: Type_1301) -> NoneType
+.basic: |Type_1303 <: Structural({.__contains__ = (self: Never, ?R) -> Bool}), R: Type|(oper1: Type_1303) -> NoneType
+.regCalc: |Type_1305 <: Structural({.__contains__ = (self: Never, ?R) -> Bool}), R: Type|(oper1: Type_1305) -> NoneType
+.runner: |Type_1301 :> {""}, Type_1301 <: Structural({.__contains__ = (self: Never, ?R) -> Bool}), R :> {"G"}|(oper1: Type_1301) -> Never
 .redo: () -> Never
 

@@ -2,6 +2,8 @@ import math
 
 global x
 global y
+global n
+global base
 global z2
 global ask
 global getAnswer
@@ -13,24 +15,58 @@ oper1 = ""
 
 
 def init():
-    print("+,-,*,/,T(an),S(in),C(os) : ")
+    print("+,-,*,/,T(an),S(in),C(os),!,e,gcd,lcm,log,^,sqrt,G(amma): ")
     oper1 = str(input(""))
     return oper1
+
+
+def advanced(oper1):
+    if "!" in oper1:
+        print("factorial of : ")
+        n = int(input(""))
+        math.factorial(n)
+        print("ans : ", math.factorial(n))
+    elif "e" in oper1:
+        print("e^x : ")
+        x = int(input(""))
+        print("ans : ", math.exp(x))
+    elif "gcd" in oper1:
+        x = int(input("num1 : "))
+        y = int(input("num2 : "))
+        print("ans : ", math.gcd(x, y))
+    elif "lcm" in oper1:
+        x = int(input("num1 : "))
+        y = int(input("num2 : "))
+        print("ans : ", math.lcm(x, y))
+    elif "log" in oper1:
+        x = int(input("log of : "))
+        base = int(input("base : "))
+        print("ans : ", math.log(x, base))
+    elif "^" in oper1:
+        x = int(input("num1 : "))
+        y = int(input("num1^y : "))
+        print("ans : ", math.pow(x, y))
+    elif "sqrt" in oper1:
+        x = int(input("sqrt of : "))
+        print("ans : ", math.sqrt(x))
+    elif "G" in oper1:
+        x = int(input("gamma fn at : "))
+        print("ans : ", math.gamma(x))
 
 
 def basic(oper1):
     if "T" in oper1:
         print("Tangent Of : ")
         tan = float(input(""))
-        print(f"trig ans : ", math.tan(tan))
+        print("trig ans : ", math.tan(tan))
     elif "S" in oper1:
         print("Sine Of : ")
         sin = float(input(""))
-        print(f"trig ans : ", math.sin(sin))
+        print("trig ans : ", math.sin(sin))
     elif "C" in oper1:
         print("Cosine Of : ")
         cos = float(input(""))
-        print(f"trig ans : ", math.cos(cos))
+        print("trig ans : ", math.cos(cos))
 
 
 # make it so that the user can put more inputs than just two
@@ -71,6 +107,7 @@ def runner(oper1):
     oper1 = init()
     basic(oper1)
     regCalc(oper1)
+    advanced(oper1)
     redo()
 
 
