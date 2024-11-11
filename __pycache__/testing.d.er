@@ -1,0 +1,6 @@
+##[pylyzer] failed /home/ffdnxob/projects/Python-projects/pyProgram1/testing.py 1731107774 209
+.re: Never
+
+.calc: Str
+.y: List!(Int, _: Nat)
+
